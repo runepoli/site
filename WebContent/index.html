@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Runepoli</title>
+</head>
+<body>
+    <script>
+    	
+    
+        var dojoConfig = {
+            async: true,
+            packages: [{
+                name: "rp",
+                location: location.pathname.replace(/\/[^/]*$/, '') + '/dojoContent'
+            }]
+        };
+    </script>
+	<script src="//ajax.googleapis.com/ajax/libs/dojo/1.9.3/dojo/dojo.js"></script>
+	<script>
+		require([
+	         'dojo/dom',
+	         'dojo/domReady!'
+	     ], function (dom) {
+			var GET = dojo.queryToObject(dojo.doc.location.search.slice(1));
+	     });
+		
+    </script>
+</body>
+</html>
